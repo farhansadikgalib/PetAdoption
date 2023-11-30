@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:pet_adoption/Business/auth/signIn.dart';
 
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({Key? key}) : super(key: key);
@@ -42,9 +43,10 @@ class OnBoardingPageState extends State<OnBoardingPage> {
     return IntroductionScreen(
       key: introKey,
       globalBackgroundColor: Colors.white,
-      allowImplicitScrolling: true,
-      autoScrollDuration: 3000,
-      infiniteAutoScroll: true,
+      allowImplicitScrolling: false,
+      autoScrollDuration: 5000,
+      infiniteAutoScroll: false,
+
 
       pages: [
         PageViewModel(
@@ -73,20 +75,24 @@ class OnBoardingPageState extends State<OnBoardingPage> {
         ),
       ],
       onDone: () => _onIntroEnd(context),
-      onSkip: () => _onIntroEnd(context), // You can override onSkip callback
+      // onSkip: () => _onIntroEnd(context), // You can override onSkip callback
       showSkipButton: true,
       skipOrBackFlex: 0,
       nextFlex: 0,
       showBackButton: false,
       //rtl: true, // Display as right-to-left
       back: const Icon(Icons.arrow_back),
-      skip: Text('Skip',
+      skip: Text('',
           style: TextStyle(
               fontWeight: FontWeight.w600,
               color: Theme.of(context).colorScheme.primary)),
-      next: Icon(
-        Icons.arrow_forward,
-        color: Theme.of(context).colorScheme.primary,
+      next: InkWell(
+        onTap: ()=>Navigator.of(context)
+             .push(MaterialPageRoute(builder: (context) => const SignIn())),
+        child: const Icon(
+          Icons.arrow_forward,
+          color: Color(0xFFBDBDBD),
+        ),
       ),
       done: Text('Done',
           style: TextStyle(
@@ -100,13 +106,15 @@ class OnBoardingPageState extends State<OnBoardingPage> {
       dotsDecorator: const DotsDecorator(
         size: Size(10.0, 10.0),
         color: Color(0xFFBDBDBD),
+        activeColor:Color(0xFFBDBDBD),
         activeSize: Size(22.0, 10.0),
         activeShape: RoundedRectangleBorder(
+
           borderRadius: BorderRadius.all(Radius.circular(25.0)),
         ),
       ),
       dotsContainerDecorator: const ShapeDecoration(
-        color: Colors.black87,
+        color: Colors.redAccent,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(8.0)),
         ),

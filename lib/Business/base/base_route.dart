@@ -11,6 +11,7 @@ class BaseRoute extends StatelessWidget {
     return Scaffold(
       //appBar: AppBar(),
       bottomNavigationBar: NavigationBar(
+        animationDuration: Duration(milliseconds: 400),
         onDestinationSelected: (int index) {
           Provider.of<UIControllers>(context, listen: false)
               .navigation(value: index);

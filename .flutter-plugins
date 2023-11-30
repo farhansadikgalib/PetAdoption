@@ -1,9 +1,21 @@
 # This is a generated file; do not edit or check into version control.
+cloud_firestore=/Users/farhan/.pub-cache/hosted/pub.dev/cloud_firestore-4.13.3/
+cloud_firestore_web=/Users/farhan/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.8.7/
+firebase_auth=/Users/farhan/.pub-cache/hosted/pub.dev/firebase_auth-4.15.0/
+firebase_auth_web=/Users/farhan/.pub-cache/hosted/pub.dev/firebase_auth_web-5.8.9/
+firebase_core=/Users/farhan/.pub-cache/hosted/pub.dev/firebase_core-2.24.0/
+firebase_core_web=/Users/farhan/.pub-cache/hosted/pub.dev/firebase_core_web-2.9.0/
+firebase_database=/Users/farhan/.pub-cache/hosted/pub.dev/firebase_database-10.3.6/
+firebase_database_web=/Users/farhan/.pub-cache/hosted/pub.dev/firebase_database_web-0.2.3+14/
 flutter_keyboard_visibility=/Users/farhan/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility-5.4.1/
 flutter_keyboard_visibility_linux=/Users/farhan/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_linux-1.0.0/
 flutter_keyboard_visibility_macos=/Users/farhan/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_macos-1.0.0/
 flutter_keyboard_visibility_web=/Users/farhan/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_web-2.0.0/
 flutter_keyboard_visibility_windows=/Users/farhan/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_windows-1.0.0/
+google_sign_in=/Users/farhan/.pub-cache/hosted/pub.dev/google_sign_in-6.1.6/
+google_sign_in_android=/Users/farhan/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.20/
+google_sign_in_ios=/Users/farhan/.pub-cache/hosted/pub.dev/google_sign_in_ios-5.6.5/
+google_sign_in_web=/Users/farhan/.pub-cache/hosted/pub.dev/google_sign_in_web-0.12.1/
 isar_flutter_libs=/Users/farhan/.pub-cache/hosted/pub.dev/isar_flutter_libs-3.1.0+1/
 path_provider=/Users/farhan/.pub-cache/hosted/pub.dev/path_provider-2.0.15/
 path_provider_android=/Users/farhan/.pub-cache/hosted/pub.dev/path_provider_android-2.0.27/

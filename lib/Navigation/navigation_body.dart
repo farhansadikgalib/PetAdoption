@@ -20,17 +20,17 @@ class NavigationBody {
   static List<Widget> navigationDestination = <Widget>[
     const NavigationDestination(
       icon: Icon(CupertinoIcons.home),
-      label: 'Home',
+      label: '',
     ),
     NavigationDestination(
       //selectedIcon: Icon(CupertinoIcons.heart_solid),
       icon: Icon(MdiIcons.history),
-      label: 'History',
+      label: '',
     ),
     const NavigationDestination(
       selectedIcon: Icon(CupertinoIcons.settings_solid),
       icon: Icon(CupertinoIcons.settings),
-      label: 'Settings',
+      label: '',
     ),
   ];
 }

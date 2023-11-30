@@ -1,10 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:pet_adoption/Utils/constant.dart';
 import 'package:pet_adoption/Utils/widgets/background_canvas.dart';
 import 'package:pet_adoption/Theme/controller/theme_provider.dart';
 import 'package:provider/provider.dart';
+
+import '../../auth/signIn.dart';
 
 class SettingUi extends StatelessWidget {
   const SettingUi({super.key});
@@ -80,6 +83,16 @@ class SettingUi extends StatelessWidget {
                     },
                     leading: Icon(MdiIcons.dog),
                     title: const Text('Animale Adopted')),
+              ),
+              lineSpacing,
+              Card(
+                child: ListTile(
+                    onTap: (){
+                      GoogleSignIn().disconnect();
+                      Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) => const SignIn()));},
+                    leading: Icon(MdiIcons.logout),
+                    title: const Text('Logout')),
               )
             ]),
           ],
