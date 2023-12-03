@@ -91,7 +91,7 @@ class OnBoardingPageState extends State<OnBoardingPage> {
              .push(MaterialPageRoute(builder: (context) => const SignIn())),
         child: const Icon(
           Icons.arrow_forward,
-          color: Color(0xFFBDBDBD),
+          color: Colors.white,
         ),
       ),
       done: Text('Done',
@@ -105,8 +105,8 @@ class OnBoardingPageState extends State<OnBoardingPage> {
           : const EdgeInsets.fromLTRB(8.0, 4.0, 8.0, 4.0),
       dotsDecorator: const DotsDecorator(
         size: Size(10.0, 10.0),
-        color: Color(0xFFBDBDBD),
-        activeColor:Color(0xFFBDBDBD),
+        color: Colors.white,
+        activeColor:Colors.white,
         activeSize: Size(22.0, 10.0),
         activeShape: RoundedRectangleBorder(
 
