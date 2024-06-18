@@ -83,9 +83,7 @@ Make sure to check the `pubspec.yaml` file for the specific versions of these de
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-## License
 
-[Add your license information here]
 
 
 
